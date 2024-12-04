@@ -1,0 +1,61 @@
+/* General logo container style */
+.logo {
+    align-self: center;
+    box-shadow: 3px 2px 7px rgb(0, 0, 0); /* Shadow effect for the logo */
+}
+
+/* Profile image style */
+.logo img {
+    transition: all .3s ease; /* Smooth transition on hover */
+    margin-bottom: -4px; /* Slight downward adjustment */
+}
+
+/* Hover effect on the logo image */
+.logo img:hover {
+    width: 230px; /* Enlarges the logo when hovered */
+}
+
+/* Circular profile image with dynamic border */
+.circle-logo {
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid; /* Border color will be set dynamically */
+    padding: 5px; /* Adds space between the image and the border */
+}
+
+/* Dark mode: white border around the profile image */
+@media (prefers-color-scheme: dark) {
+    .circle-logo {
+        border-color: rgb(255, 255, 255); /* White border in dark mode */
+    }
+}
+
+/* Light mode: black border around the profile image */
+@media (prefers-color-scheme: light) {
+    .circle-logo {
+        border-color: rgb(0, 0, 0); /* Black border in light mode */
+    }
+}
+
+/* Shadow effects for elements */
+.shadow_1 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shadow_2 {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Flexbox container for positioning */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center the elements horizontally */
+    justify-content: flex-start; /* Align items to the top */
+    height: 50vh; /* Full height of the viewport */
+    padding-top: 20px; /* Optional: adds space from the top */
+}
+
+/* Additional styling if you need more control over positioning */
+.container .logo {
+    margin-top: 30px; /* Optional: move the logo further down within the container */
+}
