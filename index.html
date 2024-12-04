@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAdMiZ</title>
+  
+  <!-- Link to Google Fonts (Roboto and Open Sans) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
+   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Base styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      transition: background-color 0.5s, color 0.5s, font-family 0.5s;
+      margin: 0;
+      padding: 0;
+      text-align: center; /* Centering text globally */
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+    }
+
+    p, ul, li {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+    }
+
+    /* Light mode styles */
+    .light-mode {
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    .light-mode h1, .light-mode h2, .light-mode h3 {
+      color: #333;
+    }
+
+    /* Dark mode styles */
+    .dark-mode {
+      background-color: #121212;
+      color: #eaeaea;
+    }
+
+    .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+      color: #eaeaea;
+    }
+
+    /* Toggle button styles */
+    .theme-toggle-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color: #5f3797;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+    }
+
+    .theme-toggle-btn:hover {
+      background-color: #57399b;
+    }
+
+    /* Smooth transitions for font changes */
+    h1, h2, h3, p {
+      transition: color 0.5s, font-family 0.5s;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Centered Contact Section */
+    .contact-section {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 30px;
+      padding: 20px;
+      text-align: center; /* Center content horizontally */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-section strong {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #f8f8f8;
+    }
+
+    .contact-section a {
+      color: #6200ea;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    .contact-section a:hover {
+      text-decoration: underline;
+      color: #3700b3;
+    }
+
+    .contact-section ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-section li {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body class="light-mode">
+
+  <button class="theme-toggle-btn" onclick="toggleTheme()">Switch to Dark Mode</button>
+
+  <!-- Your content starts here -->
+  <div class="container">
+    <div class="logo shadow_1" id="logo-image">
+        <a><img class="circle-logo" width="200px" src="profile-pic.jpg" alt="Logo"></
+  </div>
+  
+  <h1>Hi 👋, I'm Christopher Keith Irvine (MAdMiZ)</h1>
+  <h3>Contributing to Android development since 2014 and Linux since 2021.</h3>
+
+   
+  <div style="max-width: 100%; padding: 10px;">
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li style="margin-bottom: 15px; font-size: 1.30rem;">
+        💻 <strong>Daily Driver:</strong> Arch Linux is my go-to platform for nearly everything.
+      </li>
+      <li style="margin-bottom: 15px; font-size: 1.30rem;">
+        🚀 <strong>Current Projects:</strong> Building and optimizing Android device trees for Xiaomi Redmi 13C 5G / POCO M6 5G (air) on Android 14, Android 15, and upcoming Google Android versions.
+        <a href="https://github.com/mizdrake7/device_xiaomi_air" style="color: #6200ea;" aria-label="Device Xiaomi Air GitHub Repository">device_xiaomi_air</a>
+      </li>
+      <li style="margin-bottom: 15px; font-size: 1.30rem;">
+        🌱 <strong>Always Learning:</strong> Exploring the depths of <strong>Linux and Android Kernel Development</strong>.
+      </li>
+      <li style="margin-bottom: 15px; font-size: 1.30rem;">
+        🤝 <strong>Collaborations Welcome:</strong> Open to working on <strong>cutting-edge Android and Linux projects</strong>.
+      </li>
+      <li style="margin-bottom: 15px; font-size: 1.30rem;">
+        📂 <strong>My Work:</strong> Explore all my projects at 
+        <a href="https://t.me/HOME_MAdMiZ" style="color: #6200ea;" aria-label="MAdMiZ Telegram Profile">Here</a>.
+      </li>
+      <li style="margin-bottom: 15px; font-size: 1.30rem;">
+        💬 <strong>Expertise:</strong> Ask me anything about <strong>Xiaomi, Realme, or Sony devices</strong>.
+      </li>
+      <li style="margin-bottom: 15px; font-size: 1.30rem;">
+        ⚡ <strong>Fun Fact:</strong> I don't just build—I innovate, adapt, and push the limits of Android and Linux development.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Centered Contact Section -->
+  <div class="contact-section">
+    <strong>Contact Me</strong>
+    <ul>
+      <li>
+        📧 <a href="mailto:mizdrake7@gmail.com" aria-label="Email Me">mizdrake7@gmail.com</a>
+      </li>
+      <li>
+         <a href="https://t.me/MAdMiZ" aria-label="MAdMiZ Telegram">MAdMiZ</a>
+      </li>
+      <li>
+        <a href="https://facebook.com/mizdrake7" aria-label="Facebook Profile">Facebook</a>
+      </li>
+      <li>
+        <a href="https://instagram.com/heart.breaker.kid" aria-label="Instagram Profile">Instagram</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Theme toggle button JavaScript -->
+  <script>
+    // Get the current theme from localStorage (if exists)
+    let currentTheme = localStorage.getItem('theme') || 'light-mode';
+
+    // Set the theme initially
+    document.body.className = currentTheme;
+
+    // Get the button text based on the theme
+    const themeButton = document.querySelector('.theme-toggle-btn');
+    themeButton.innerText = currentTheme === 'light-mode' ? 'Dark Mode' : 'Light Mode';
+
+    // Function to toggle the theme
+    function toggleTheme() {
+      const newTheme = document.body.classList.contains('light-mode') ? 'dark-mode' : 'light-mode';
+      document.body.className = newTheme;
+      themeButton.innerText = newTheme === 'light-mode' ? 'Dark Mode' : 'Light Mode';
+
+      // Save the selected theme to localStorage
+      localStorage.setItem('theme', newTheme);
+    }
+  </script>
+
+</body>
+</html>
