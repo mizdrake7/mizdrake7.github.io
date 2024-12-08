@@ -1,61 +1,116 @@
-/* General logo container style */
-.logo {
-    align-self: center;
-    box-shadow: 3px 2px 7px rgb(0, 0, 0); /* Shadow effect for the logo */
+body {
+  margin: 0px;
+  background-color: var(--background-color);
+  font-size: large;
+  font-weight: bold;
 }
 
-/* Profile image style */
-.logo img {
-    transition: all .3s ease; /* Smooth transition on hover */
-    margin-bottom: -4px; /* Slight downward adjustment */
+:root {
+    --background-color: black;
+    --font-color: white;
 }
 
-/* Hover effect on the logo image */
-.logo img:hover {
-    width: 230px; /* Enlarges the logo when hovered */
+.dark-theme{
+  --background-color: white;
+  --font-color: black; 
 }
 
-/* Circular profile image with dynamic border */
-.circle-logo {
-    border-radius: 50%; /* Makes the image circular */
-    border: 5px solid; /* Border color will be set dynamically */
-    padding: 5px; /* Adds space between the image and the border */
+#toogle-button{
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  animation-name: toggle;
+  animation-duration: 3.60s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards
 }
 
-/* Dark mode: white border around the profile image */
-@media (prefers-color-scheme: dark) {
-    .circle-logo {
-        border-color: rgb(255, 255, 255); /* White border in dark mode */
-    }
+#bio{
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: underline;
+  color: white; font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5; 
+  margin: 0;
 }
 
-/* Light mode: black border around the profile image */
-@media (prefers-color-scheme: light) {
-    .circle-logo {
-        border-color: rgb(0, 0, 0); /* Black border in light mode */
-    }
+.heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 10px;
 }
 
-/* Shadow effects for elements */
-.shadow_1 {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.shadow_2 {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Flexbox container for positioning */
 .container {
-    display: flex;
-    flex-direction: column; /* Stack child elements vertically */
-    align-items: center; /* Center the elements horizontally */
-    justify-content: flex-start; /* Align items to the top */
-    height: 50vh; /* Full height of the viewport */
-    padding-top: 20px; /* Optional: adds space from the top */
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto;
 }
 
-/* Additional styling if you need more control over positioning */
-.container .logo {
-    margin-top: 30px; /* Optional: move the logo further down within the container */
+h3 {
+  align-items: center;
+  text-align: center;
+  color: var(--font-color);
+  padding: 5px;
+  display: block;
+  text-decoration: underline dotted;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.info {
+  font-family: 'Roboto Mono', monospace;
+  color: var(--font-color);
+  text-align: center;
+  padding: 30px 30px 10px 30px;
+}
+
+.logo {
+  align-self: center; 
+}
+
+.logo img {
+  transition: all .2s ease 0s;
+  margin-bottom: -4px;
+}
+
+.logo img:hover {
+  width: 210px;
+}
+
+.socials {
+  align-self: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.socials a img {
+  width: 32px;
+  margin: 12px 9px 5px 9px;
+}
+
+.socials a img:hover {
+  transform: translateY(-10px); 
+}
+
+footer {
+  align-self: center;
+  font-size: .9rem;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px 0px 30px 0px;
+}
+
+
+.secondary-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+.white {
+  color: var(--font-color);
 }
