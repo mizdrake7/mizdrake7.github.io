@@ -1,142 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAdMiZ</title>
-  
-  <!-- Link to Google Fonts (Roboto and Open Sans) -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  
-   <link rel="stylesheet" href="CSS/style.css">
-  
-  <style>
-    /* Base styles */
-    body {
-      font-family: 'Roboto', sans-serif;
-      transition: background-color 0.5s, color 0.5s, font-family 0.5s;
-      margin: 0;
-      padding: 0;
-      text-align: center; /* Centering text globally */
-    }
-
-    h1, h2, h3, h4 {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 600;
-    }
-
-    p, ul, li {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-    }
-
-    /* Light mode styles */
-    .light-mode {
-      background-color: #ffffff;
-      color: #333;
-    }
-
-    .light-mode h1, .light-mode h2, .light-mode h3 {
-      color: #333;
-    }
-
-    /* Dark mode styles */
-    .dark-mode {
-      background-color: #121212;
-      color: #eaeaea;
-    }
-
-    .dark-mode h1, .dark-mode h2, .dark-mode h3 {
-      color: #eaeaea;
-    }
-
-    /* Toggle button styles */
-    .theme-toggle-btn {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      padding: 10px;
-      background-color: #5f3797;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 600;
-    }
-
-    .theme-toggle-btn:hover {
-      background-color: #57399b;
-    }
-
-    /* Smooth transitions for font changes */
-    h1, h2, h3, p {
-      transition: color 0.5s, font-family 0.5s;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    /* Centered Contact Section */
-    .contact-section {
-      font-size: 1.2rem;
-      color: #555;
-      margin-bottom: 30px;
-      padding: 20px;
-      text-align: center; /* Center content horizontally */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .contact-section strong {
-      font-size: 1.4rem;
-      margin-bottom: 10px;
-      color: #6200ea;
-    }
-
-    .contact-section a {
-      color: #6200ea;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s ease, text-decoration 0.3s ease;
-    }
-
-    .contact-section a:hover {
-      text-decoration: underline;
-      color: #3700b3;
-    }
-
-    .contact-section ul {
-      list-style-type: none;
-      padding-left: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .contact-section li {
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 1.1rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAdMiZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    
+      Link to Google Fonts (Roboto and Open Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body class="light-mode">
 
-  <button class="theme-toggle-btn" onclick="toggleTheme()">Switch to Dark Mode</button>
+<body>
 
-  <!-- Your content starts here -->
-  <div class="container">
-    <div class="logo shadow_1" id="logo-image">
-        <a><img class="circle-logo" width="200px" src="Images/profile-pic.jpg" alt="Logo"></
-  </div>
-  
+    <div class="heading">
+        <span class="shadow" id="bio">MAdMiZ</span>
+        <img id="toogle-button" class="shadow_1" style="width: 30px;" src="Images/sun.png" alt="Not found" />
+    </div>
+    <div class="container">
+        <div class="logo shadow" id="logo-image"><a><img width="200px" src="Images/profile-pic.jpg" alt=""></a></div>
+        <div class="info shadow">
+
   <h1>Hi 👋, I'm Christopher Keith Irvine (MAdMiZ)</h1>
   <h3>Contributing to Android development since 2014 and Linux since 2021.</h3>
 
@@ -169,47 +60,66 @@
     </ul>
   </div>
 
-  <!-- Centered Contact Section -->
-  <div class="contact-section">
-    <strong>Contact Me</strong>
-    <ul>
-      <li>
-        📧 <a href="mailto:mizdrake7@gmail.com" aria-label="Email Me">mizdrake7@gmail.com</a>
-      </li>
-      <li>
-         <a href="https://t.me/MAdMiZ" aria-label="MAdMiZ Telegram">MAdMiZ</a>
-      </li>
-      <li>
-        <a href="https://facebook.com/mizdrake7" aria-label="Facebook Profile">Facebook</a>
-      </li>
-      <li>
-        <a href="https://instagram.com/heart.breaker.kid" aria-label="Instagram Profile">Instagram</a>
-      </li>
-    </ul>
-  </div>
 
-  <!-- Theme toggle button JavaScript -->
-  <script>
-    // Get the current theme from localStorage (if exists)
-    let currentTheme = localStorage.getItem('theme') || 'light-mode';
+            <div class="socials shadow_2">
+                <h4 class="secondary-heading center white underline">Contact Me</h4>
+                <a href="https://github.com/mizdrake7" target="_blank"><img id="github"
+                        src="Images/github-mark-white.png" alt="github"></a>
+                <a href="https://t.me/MAdMiZ" target="_blank"><img id="telegram" src="Images/t-white.png"
+                        alt="telegram"></a>
+                <a href="mailto:mizdrake7@gmail.com" target="_blank"><img id="mail" src="Images/m-white.png"
+                        alt="Email"></a>
+                <a href="https://instagram.com/heart.breaker.kid" target="_blank"><img id="instagram" src="Images/instagram-white.png"
+                          alt="instagram"></a>
+                <a href="https://www.facebook.com/mizdrake7" target="_blank"><img id="facebook" src="Images/facebook-white.png"
+                          alt="facebook"></a>              
+            </div>
+        </div>
 
-    // Set the theme initially
-    document.body.className = currentTheme;
-
-    // Get the button text based on the theme
-    const themeButton = document.querySelector('.theme-toggle-btn');
-    themeButton.innerText = currentTheme === 'light-mode' ? 'Dark Mode' : 'Light Mode';
-
-    // Function to toggle the theme
-    function toggleTheme() {
-      const newTheme = document.body.classList.contains('light-mode') ? 'dark-mode' : 'light-mode';
-      document.body.className = newTheme;
-      themeButton.innerText = newTheme === 'light-mode' ? 'Dark Mode' : 'Light Mode';
-
-      // Save the selected theme to localStorage
-      localStorage.setItem('theme', newTheme);
-    }
-  </script>
+        <footer class="white shadow">Made with by <a class="white links"
+          href="https://itsprofessorx.github.io/">ProFessor</a></footer>
 
 </body>
+
+<script>
+    var toggleButton = document.getElementById('toogle-button')
+    var github = document.getElementById('github')
+    var telegram = document.getElementById('telegram')
+    var instagram = document.getElementById('instagram')
+    var facebook = document.getElementById('facebook')
+    var mail = document.getElementById('mail')
+    var logoImage = document.getElementById('logo-image')
+    var bio = document.getElementById('bio')
+
+    toggleButton.onclick = function () {
+        document.body.classList.toggle('dark-theme')
+        if (document.body.classList.contains('dark-theme')) {
+            toggleButton.src = 'Images/moon.png'
+            github.src = 'Images/github-mark.png'
+            telegram.src = 'Images/t-black.png'
+            mail.src = 'Images/m-black.png'
+            instagram.src = 'Images/instagram-black.png'
+            facebook.src = 'Images/facebook-black.png'
+            logoImage.style.boxShadow = '3px 2px 9px black'
+            bio.style.color = 'black'
+        }
+        else {
+            toggleButton.src = 'Images/sun.png'
+            github.src = 'Images/github-mark-white.png'
+            telegram.src = 'Images/t-white.png'
+            mail.src = 'Images/m-white.png'
+            instagram.src = 'Images/instagram-white.png'
+            facebook.src = 'Images/facebook-white.png'
+            logoImage.style.boxShadow = '3px 2px 7px white'
+            bio.style.color = 'white'
+        }
+    }
+
+    setTimeout(function () {
+        const toggleButton = document.getElementById('toogle-button');
+        toggleButton.style.display = 'block';
+    }, 2000)
+
+
+</script>
 </html>
